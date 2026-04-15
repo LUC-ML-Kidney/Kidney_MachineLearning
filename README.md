@@ -2,13 +2,22 @@
 
 ## Data availability
 
+Create these folders first: 
+
+```
+mkdir data
+mkdir data/TCGA_Transcriptome
+mkdir data/TCGA_Clinical
+
+```
+
 To download transcriptome data: 
 
 ```
-wget -P data/TCGA_transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.star_fpkm-uq.tsv.gz
-wget -P data/TCGA_transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRP.star_fpkm-uq.tsv.gz
-wget -P data/TCGA_transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KICH.star_fpkm-uq.tsv.gz
-gunzip data/TCGA_transcriptome/*.gz
+wget -P data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.star_fpkm-uq.tsv.gz
+wget -P data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRP.star_fpkm-uq.tsv.gz
+wget -P data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KICH.star_fpkm-uq.tsv.gz
+gunzip data/TCGA_Transcriptome/*.gz
 ```
 
 To download clinical data: 
