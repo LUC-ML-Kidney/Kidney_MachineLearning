@@ -1,8 +1,9 @@
 # Kidney_MachineLearning
 
 ## Data availability
+All commands use the linux operating system. 
 
-Create these folders first: 
+Run these commands inside the Kidney_MachineLearning directory to create the necessary folder structure: 
 
 ```
 mkdir data
