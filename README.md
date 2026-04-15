@@ -9,42 +9,18 @@ git clone https://github.com/emaanpirzada/Kidney_MachineLearning.git
 ```
 
 Change working directory to ensure you are inside Kidney_MachineLearning:
-
 ```
 cd Kidney_MachineLearning
 ```
 
 Create the necessary folder structure: 
-
 ```
 mkdir Data
 mkdir Data/TCGA_Transcriptome
 mkdir Data/TCGA_Clinical
 ```
 
-To download transcriptome data: 
-All commands use the linux operating system. 
-
-Clone the repo:
-```
-git clone https://github.com/emaanpirzada/Kidney_MachineLearning.git
-```
-
-Change working directory to ensure you are inside Kidney_MachineLearning:
-
-```
-cd Kidney_MachineLearning
-```
-
-Create the necessary folder structure: 
-
-```
-mkdir Data
-mkdir Data/TCGA_Transcriptome
-mkdir Data/TCGA_Clinical
-```
-
-To download transcriptome data: 
+Download transcriptome data: 
 Note: Files range from ~50–450 MB and may take time to download.
 ```
 wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.star_fpkm-uq.tsv.gz
@@ -53,22 +29,7 @@ wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/down
 gunzip Data/TCGA_Transcriptome/*.gz
 ```
 
-To download clinical data: 
-
-```
-wget -P Data/TCGA_Clinical/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.clinical.tsv.gz
-wget -P Data/TCGA_Clinical/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRP.clinical.tsv.gz
-wget -P Data/TCGA_Clinical/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KICH.clinical.tsv.gz
-gunzip Data/TCGA_Clinical/*.gz
-```
-```
-wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.star_fpkm-uq.tsv.gz
-wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRP.star_fpkm-uq.tsv.gz
-wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KICH.star_fpkm-uq.tsv.gz
-gunzip Data/TCGA_Transcriptome/*.gz
-```
-
-To download clinical data: 
+Download clinical data: 
 
 ```
 wget -P Data/TCGA_Clinical/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.clinical.tsv.gz
