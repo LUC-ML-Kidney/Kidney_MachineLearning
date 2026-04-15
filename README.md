@@ -21,6 +21,7 @@ mkdir Data/TCGA_Clinical
 ```
 
 Download transcriptome data: 
+
 Note: Files range from ~50–450 MB and may take time to download.
 ```
 wget -P Data/TCGA_Transcriptome/ https://gdc-hub.s3.us-east-1.amazonaws.com/download/TCGA-KIRC.star_fpkm-uq.tsv.gz
